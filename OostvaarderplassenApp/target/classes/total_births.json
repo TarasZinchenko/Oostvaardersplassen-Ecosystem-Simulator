@@ -1,0 +1,236 @@
+{
+    "total_births": [
+      {
+        "year": 1990,
+        "heck_cattle": 0,
+        "konik_horses": 0,
+        "red_deer": 0,
+        "total": 0
+      },
+      {
+        "year": 1991,
+        "heck_cattle": 5,
+        "konik_horses": 0,
+        "red_deer": 0,
+        "total": 5
+      },
+      {
+        "year": 1992,
+        "heck_cattle": 10,
+        "konik_horses": 5,
+        "red_deer": 0,
+        "total": 15
+      },
+      {
+        "year": 1993,
+        "heck_cattle": 10,
+        "konik_horses": 10,
+        "red_deer": 0,
+        "total": 20
+      },
+      {
+        "year": 1994,
+        "heck_cattle": 15,
+        "konik_horses": 10,
+        "red_deer": 0,
+        "total": 25
+      },
+      {
+        "year": 1995,
+        "heck_cattle": 25,
+        "konik_horses": 10,
+        "red_deer": 0,
+        "total": 35
+      },
+      {
+        "year": 1996,
+        "heck_cattle": 25,
+        "konik_horses": 15,
+        "red_deer": 0,
+        "total": 40
+      },
+      {
+        "year": 1997,
+        "heck_cattle": 35,
+        "konik_horses": 20,
+        "red_deer": 0,
+        "total": 55
+      },
+      {
+        "year": 1998,
+        "heck_cattle": 40,
+        "konik_horses": 20,
+        "red_deer": 0,
+        "total": 60
+      },
+      {
+        "year": 1999,
+        "heck_cattle": 45,
+        "konik_horses": 35,
+        "red_deer": 20,
+        "total": 100
+      },
+      {
+        "year": 2000,
+        "heck_cattle": 60,
+        "konik_horses": 45,
+        "red_deer": 35,
+        "total": 140
+      },
+      {
+        "year": 2001,
+        "heck_cattle": 65,
+        "konik_horses": 60,
+        "red_deer": 35,
+        "total": 160
+      },
+      {
+        "year": 2002,
+        "heck_cattle": 70,
+        "konik_horses": 40,
+        "red_deer": 50,
+        "total": 160
+      },
+      {
+        "year": 2003,
+        "heck_cattle": 75,
+        "konik_horses": 60,
+        "red_deer": 65,
+        "total": 200
+      },
+      {
+        "year": 2004,
+        "heck_cattle": 105,
+        "konik_horses": 80,
+        "red_deer": 75,
+        "total": 260
+      },
+      {
+        "year": 2005,
+        "heck_cattle": 100,
+        "konik_horses": 90,
+        "red_deer": 80,
+        "total": 270
+      },
+      {
+        "year": 2006,
+        "heck_cattle": 110,
+        "konik_horses": 110,
+        "red_deer": 100,
+        "total": 320
+      },
+      {
+        "year": 2007,
+        "heck_cattle": 125,
+        "konik_horses": 110,
+        "red_deer": 145,
+        "total": 380
+      },
+      {
+        "year": 2008,
+        "heck_cattle": 130,
+        "konik_horses": 150,
+        "red_deer": 200,
+        "total": 480
+      },
+      {
+        "year": 2009,
+        "heck_cattle": 135,
+        "konik_horses": 160,
+        "red_deer": 270,
+        "total": 565
+      },
+      {
+        "year": 2010,
+        "heck_cattle": 130,
+        "konik_horses": 200,
+        "red_deer": 280,
+        "total": 610
+      },
+      {
+        "year": 2011,
+        "heck_cattle": 130,
+        "konik_horses": 250,
+        "red_deer": 430,
+        "total": 810
+      },
+      {
+        "year": 2012,
+        "heck_cattle": 130,
+        "konik_horses": 240,
+        "red_deer": 440,
+        "total": 810
+      },
+      {
+        "year": 2013,
+        "heck_cattle": 140,
+        "konik_horses": 270,
+        "red_deer": 700,
+        "total": 1110
+      },
+      {
+        "year": 2014,
+        "heck_cattle": 110,
+        "konik_horses": 260,
+        "red_deer": 450,
+        "total": 820
+      },
+      {
+        "year": 2015,
+        "heck_cattle": 130,
+        "konik_horses": 335,
+        "red_deer": 700,
+        "total": 1165
+      },
+      {
+        "year": 2016,
+        "heck_cattle": 130,
+        "konik_horses": 330,
+        "red_deer": 500,
+        "total": 960
+      },
+      {
+        "year": 2017,
+        "heck_cattle": 100,
+        "konik_horses": 170,
+        "red_deer": 700,
+        "total": 970
+      },
+      {
+        "year": 2018,
+        "heck_cattle": 105,
+        "konik_horses": 330,
+        "red_deer": 800,
+        "total": 1235
+      },
+      {
+        "year": 2019,
+        "heck_cattle": 100,
+        "konik_horses": 260,
+        "red_deer": 950,
+        "total": 1310
+      },
+      {
+        "year": 2020,
+        "heck_cattle": 60,
+        "konik_horses": 250,
+        "red_deer": 550,
+        "total": 860
+      },
+      {
+        "year": 2021,
+        "heck_cattle": 60,
+        "konik_horses": 290,
+        "red_deer": 800,
+        "total": 1150
+      },
+      {
+        "year": 2022,
+        "heck_cattle": null,
+        "konik_horses": null,
+        "red_deer": null,
+        "total": null
+      }
+    ]
+  }
+  
