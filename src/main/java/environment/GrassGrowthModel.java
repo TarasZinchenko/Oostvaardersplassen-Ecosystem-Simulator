@@ -22,12 +22,22 @@ public class GrassGrowthModel {
     private List<GrassRecord> loadGrassData() {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            // Dacă JSON-ul are un obiect la rădăcină, cu cheia 'grass_height'
-            JsonNode rootNode = objectMapper.readTree(new File(GRASS_DATA_FILE_PATH));
-            JsonNode grassHeightNode = rootNode.get("grass_height");
+            java.io.InputStream is = getClass().getClassLoader().getResourceAsStream("grass_height.json");
+            JsonNode rootNode = null;
+            if (is != null) {
+                rootNode = objectMapper.readTree(is);
+            } else {
+                File file = new File(GRASS_DATA_FILE_PATH);
+                if (file.exists()) {
+                    rootNode = objectMapper.readTree(file);
+                }
+            }
 
-            // Deserializăm array-ul de recorduri din JSON
-            return objectMapper.convertValue(grassHeightNode, new TypeReference<List<GrassRecord>>(){});
+            if (rootNode != null && rootNode.has("grass_height")) {
+                JsonNode grassHeightNode = rootNode.get("grass_height");
+                return objectMapper.convertValue(grassHeightNode, new TypeReference<List<GrassRecord>>(){});
+            }
+            return new ArrayList<>();
         } catch (IOException e) {
             e.printStackTrace();
             return new ArrayList<>();

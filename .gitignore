@@ -1,0 +1,28 @@
+# Build and compiled output
+target/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# IDE and Project Files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary scratch directory
+scratch/

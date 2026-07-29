@@ -45,11 +45,18 @@ public class EnvironmentalFactors {
 
     public void loadAnimalRecords() {
         try {
-            AnimalsData animalsData = objectMapper.readValue(new File(POPULATION_FILE_PATH), AnimalsData.class);
+            java.io.InputStream is = getClass().getClassLoader().getResourceAsStream("animals_on_january_1st.json");
+            AnimalsData animalsData = null;
+            if (is != null) {
+                animalsData = objectMapper.readValue(is, AnimalsData.class);
+            } else {
+                File file = new File(POPULATION_FILE_PATH);
+                if (file.exists()) {
+                    animalsData = objectMapper.readValue(file, AnimalsData.class);
+                }
+            }
             if (animalsData != null && animalsData.getAnimalRecords() != null) {
                 this.animalRecords = animalsData.getAnimalRecords();
-    
-                // Update the chart data after loading records
                 updatePopulationSeries();
             }
         } catch (IOException e) {
@@ -61,16 +68,22 @@ public class EnvironmentalFactors {
     
     private void loadGrassRecords() {
         try {
-            // Deserialize GrassHeightData from JSON
-            GrassHeightData grassHeightData = objectMapper.readValue(new File(GRASS_HEIGHT_FILE_PATH), GrassHeightData.class);
+            java.io.InputStream is = getClass().getClassLoader().getResourceAsStream("grass_height.json");
+            GrassHeightData grassHeightData = null;
+            if (is != null) {
+                grassHeightData = objectMapper.readValue(is, GrassHeightData.class);
+            } else {
+                File file = new File(GRASS_HEIGHT_FILE_PATH);
+                if (file.exists()) {
+                    grassHeightData = objectMapper.readValue(file, GrassHeightData.class);
+                }
+            }
     
-            // Initialize the map for storing grass records by year
             grassRecordsByYear = new HashMap<>();
-    
-            // Loop through each GrassRecord in GrassHeightData
-            for (GrassHeightData.GrassRecord grassRecord : grassHeightData.getGrassRecords()) {
-                // Directly add the record into the map (key is the year)
-                grassRecordsByYear.put(grassRecord.getYear(), grassRecord);
+            if (grassHeightData != null && grassHeightData.getGrassRecords() != null) {
+                for (GrassHeightData.GrassRecord grassRecord : grassHeightData.getGrassRecords()) {
+                    grassRecordsByYear.put(grassRecord.getYear(), grassRecord);
+                }
             }
     
         } catch (IOException e) {
